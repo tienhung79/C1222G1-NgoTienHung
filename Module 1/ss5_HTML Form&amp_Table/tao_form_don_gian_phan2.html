@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        form{background-color: antiquewhite}
+    </style>
+
+</head>
+<body>
+<form>
+    <table>
+        <h1 style="background-color: blue; color: red">Đăng ký học viên</h1>
+        <tr>
+            <th style="color: yellow"> <label for="name">Họ và tên:</label></th>
+            <td> <input type="text" name="Họ và tên" id="name"></td>
+        </tr>
+        <tr>
+            <th style="color: yellow"> <label for="Ngaysinh">Ngày sinh:</label></th>
+            <td> <input type="number" name="Ngày sinh" id="Ngaysinh"></td>
+        </tr>
+        <tr>
+            <th style="color: yellow"> <label for="GT">Giới tính:</label></th>
+            <td> <input type="radio" name="Giới tính" id="GT">Nam
+                 <input type="radio" name="Giới tính" >Nữ</td>
+        </tr>
+        <tr>
+            <th style="color: yellow"> <label for="Diachi">Địa chỉ:</label></th>
+            <td> <textarea cols="50" rows="5" id="Diachi"> </textarea></td>
+        </tr>
+        <tr>
+            <th style="color: yellow" ><label for="Lop">Lớp</label></th>
+            <td>
+                <select>
+                    <option id="lop">-Chọn lớp-</option>
+                    <option >1</option>
+                    <option >2</option>
+                    <option >3</option>
+                    <option >4</option>
+                    <option >5</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <th style="color: yellow" > <label for="Email">Email:</label></th>
+            <td> <input type="text" name="Email" id="Email"></td>
+        </tr>
+        <tr>
+            <th style="color: yellow" > <label for="sdt">Số điện thoại:</label></th>
+            <td> <input type="number" name="Số điện thoại" id="sdt"></td>
+
+        </tr>
+        <tr>
+            <td>
+                <input type="submit" name="Đăng ký" value="Đăng ký">
+                <input type="reset" name="Nhập lại" value="Nhập lại">
+
+            </td>
+        </tr>
+
+    </table>
+</form>
+
+</body>
+</html>
