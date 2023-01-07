@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        th,td {
+            width: 10%;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+<table >
+<form>
+    <tr>
+        <th> <label for="amount">Amount</label> </th>
+        <th> From Currency </th>
+        <th> To Currency </th>
+    </tr>
+    <tr>
+        <td><input type="text" id="amount">  </td>
+        <td>
+            <select id="from">
+            <option value="VND"> VND</option>
+            <option value="USD"> USD </option>
+            </select>
+       </td>
+        <td>
+            <select id="to">
+                <option value="VND"> VND</option>
+                <option value="USD"> USD </option>
+            </select>
+        </td>
+        <td>
+            <button type="button" onclick="f()">Convert</button>
+        </td>
+    </tr>
+
+</form>
+</table>
+    <p id="result"></p>
+</body>
+<script src="bai_1.js">
+
+</script>
+</html>
