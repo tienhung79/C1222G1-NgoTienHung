@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai 6</title>
+</head>
+<body>
+    <input type="text" id="a"> Doanh số <br>
+    <input type="text" id="c"> Tỷ lệ hoa hồng <br>
+    <input type="button" onclick="f()" value="kiểm tra"> <br>
+    <input type="text" id="h"> Hoa hồng
+</body>
+<script>
+    function f() {
+        let a = document.getElementById("a").value;
+        let h;
+        let c = document.getElementById("c").value;
+        h = a * (c / 100)
+        document.getElementById("h").value=h;
+    }
+</script>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai 4</title>
+</head>
+<body>
+    <input type="text" id="a">a<br>
+    <input type="text" id="b">b<br>
+    <input type="text" id="c">c<br>
+    <input type="button" value="Số lớn nhất" onclick="f()"><br>
+    <p id="p"></p>
+</body>
+<script>
+    function f() {
+        let a = +document.getElementById("a").value;
+        let b = +document.getElementById("b").value;
+        let c = +document.getElementById("c").value;
+        let max1 = document.getElementById("p");
+
+            if (a>=b && a>=c){
+                max1.innerText = a + ' là giá trị lớn nhất'
+            }else if (b>=a && b>= c){
+                max1.innerText = b +' là giá trị lớn nhất'
+            }else {
+                max1.innerText = c +' là giá trị lớn nhất'
+            }
+
+    }
+</script>
+</html>

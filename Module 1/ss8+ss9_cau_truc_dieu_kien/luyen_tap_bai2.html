@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai 2</title>
+</head>
+<body>
+    <input type="text" id="old" > Nhập tuổi <br>
+    <input type="button" onclick="KQ()" value="Kết quả"> <br>
+    <input type="text" id="KQ">
+</body>
+<script>
+    function KQ() {
+        let a = parseInt(document.getElementById("old").value);
+        let p;
+        if (a>15){
+            p = "Đủ điều kiện"
+        } else {
+            p = "không đủ điều kiện"
+        }
+        document.getElementById("KQ").value = p;
+    }
+</script>
+</html>
