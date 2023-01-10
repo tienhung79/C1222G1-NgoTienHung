@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai 11</title>
+</head>
+<body>
+    <input type="text" id="a"> thu nhập <br>
+    <input type="button" onclick="f()" value="check"> <br>
+    <input type="text" id="b"> vnd
+</body>
+<script>
+    function f() {
+        let a = document.getElementById("a").value;
+        let b;
+        if (a <= 5000000) {
+            b = a * 0.05;
+        } else if (a > 5000000 && a <= 10000000) {
+            b = a * 0.1 - 250000;
+        } else {
+            b = a * 0.2 - 1650000;
+        }
+        document.getElementById("b").value = b;
+    }
+</script>
+</html>

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai 3</title>
+</head>
+<body>
+    <input type="text" id="a"> a <br>
+    <input type="button" onclick="g()" value="="> <br>
+    <input type="text" id="s">
+</body>
+<script>
+    function g() {
+        let a = +document.getElementById("a").value;
+        let s = Math.pow(a, 2);
+        document.getElementById("s").value = s;
+    }
+
+</script>
+</html>

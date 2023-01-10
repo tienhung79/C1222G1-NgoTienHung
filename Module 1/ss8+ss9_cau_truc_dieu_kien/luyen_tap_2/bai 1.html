@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai 1 </title>
+</head>
+<body>
+    <input type="text" id="c"> độ C <br>
+    <input type="button" onclick="g()" value="="> <br>
+    <input type="text" id="f"> độ F
+</body>
+<script>
+    function g() {
+        let c = +document.getElementById("c").value;
+        let f;
+        f = c * 9 / 5 + 32;
+        document.getElementById("f").value = f;
+    }
+</script>
+</html>

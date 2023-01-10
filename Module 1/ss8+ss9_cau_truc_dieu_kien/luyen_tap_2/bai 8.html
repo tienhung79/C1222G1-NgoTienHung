@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai 8</title>
+</head>
+<body>
+    <input type="number" max="120" min="0" id="a"> age <br>
+    <input type="button" onclick="f()" value="check"><br>
+    <input type="text" id="b"> result
+</body>
+<script>
+    function f() {
+        let a = parseInt(document.getElementById("a").value);
+        let b;
+        if (a > 0 && a < 120) {
+            b = "Tuổi của một người";
+        } else {
+            b = "không phải tuổi của một người";
+        }
+        document.getElementById("b").value = b;
+
+
+    }
+</script>
+</html>

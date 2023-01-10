@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai 6</title>
+</head>
+<body>
+    <h1> aX + b = c. Tìm x khi biết a,b,c</h1>
+    <input type="text" id="a"> a <br>
+    <input type="text" id="b"> b <br>
+    <input type="text" id="c"> c <br>
+    <input type="button" onclick="f()" value="="><br>
+    <input type="text" id="x">
+</body>
+<script>
+    function f() {
+        let a = +document.getElementById("a").value;
+        let b = +document.getElementById("b").value;
+        let c = +document.getElementById("c").value;
+        let x;
+        if (a != 0) {
+            x = (c - b) / a;
+        } else {
+            x = 'vô nghiệm';
+        }
+        document.getElementById("x").value = x;
+
+
+    }
+</script>
+</html>

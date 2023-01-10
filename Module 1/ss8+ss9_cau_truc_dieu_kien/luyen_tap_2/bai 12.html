@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai 12</title>
+</head>
+<body>
+    <input type="text" id="a"> Số tiền gửi <br>
+    <input type="text" value="1%" disabled> Lãi suất hằng năm <br>
+    <input type="text" id="b"> Thời gian gửi <br>
+    <input type="button" onclick="f()" value="check"> <br>
+    <input type="text" id="c"> Số tiền nhận được
+</body>
+<script>
+    function f() {
+        let a = document.getElementById("a").value;
+        let b = document.getElementById("b").value;
+        let r = 0.01;
+        let c;
+        c = a * Math.pow(1 + r, b);
+        document.getElementById("c").value = c;
+    }
+</script>
+</html>

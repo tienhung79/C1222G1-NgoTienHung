@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai 2</title>
+</head>
+<body>
+    <input type="text" id="m"> m <br>
+    <input type="button" onclick="g()" value="="> <br>
+    <input type="text" id="ft"> ft
+</body>
+<script>
+    function g() {
+        let m = +document.getElementById("m").value;
+        let ft;
+        ft = m * 3.2808;
+        document.getElementById("ft").value = ft;
+    }
+</script>
+</html>

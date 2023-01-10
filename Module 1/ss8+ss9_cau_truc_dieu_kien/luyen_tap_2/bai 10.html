@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai 10</title>
+</head>
+<body>
+    <input type="text" id="a"> kWh <br>
+    <input type="button" onclick="f()" value="kiểm tra"> <br>
+    <input type="text" id="b"> NVD
+</body>
+<script>
+    function f() {
+        let a = document.getElementById("a").value;
+        let b;
+        if (a > 0 && a <= 50) {
+            b = a * 1678;
+        } else if (a >= 51 && a <= 100) {
+            b = a * 1734;
+        } else {
+            b = a * 2014;
+        }
+        document.getElementById("b").value = b;
+    }
+</script>
+</html>

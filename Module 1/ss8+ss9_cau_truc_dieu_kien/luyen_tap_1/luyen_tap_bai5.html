@@ -6,10 +6,8 @@
 </head>
 <body>
     <h1> Tiêu chí</h1>
-    <pre>
-        cuối kỳ =(kiểm tra +giữa kỳ)/2
-    </pre> <br>
-
+    <pre>cuối kỳ =(kiểm tra +giữa kỳ)/2</pre>
+    <br>
     <input type="text" id="kt"> Kiểm tra<br>
     <input type="text" id="gk"> Giữa kỳ <br>
     <input type="text" id="ck"> Cuối kỳ <br>
@@ -21,16 +19,16 @@
         let a = parseInt(document.getElementById("kt").value);
         let b = parseInt(document.getElementById("gk").value);
         let c;
-            c = (a+b)/2
+        c = (a + b) / 2;
         document.getElementById("ck").value = c;
-            if (c>8){
-                k ="giỏi"
-            }else if (c<8 && c>6 ) {
-                k="khá"
-            }else {
-                k="trung bình"
-            }
-            document.getElementById("hl").value =k;
+        if (c > 8) {
+            k = "giỏi";
+        } else if (c < 8 && c > 6) {
+            k = "khá";
+        } else {
+            k = "trung bình";
+        }
+        document.getElementById("hl").value = k;
     }
 </script>
 </html>

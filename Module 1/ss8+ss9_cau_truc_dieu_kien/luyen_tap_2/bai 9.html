@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai 9</title>
+</head>
+<body>
+    <input type="number" id="a"> a <br>
+    <input type="number" id="b"> b <br>
+    <input type="number" id="c"> c <br>
+    <input type="button" onclick="f()" value="check"><br>
+    <input type="text" id="d"> result
+</body>
+<script>
+    function f() {
+        let a = +document.getElementById("a").value;
+        let b = +document.getElementById("b").value;
+        let c = +document.getElementById("c").value;
+        let d;
+        if (a > 0 && b > 0 && c > 0 && a + b > c && b + c > a && a + c > b) {
+            d = "là cạnh của tam giác";
+        } else {
+            d = "không phải là cạnh cả tam giác";
+        }
+        document.getElementById("d").value = d;
+
+
+    }
+</script>
+</html>
