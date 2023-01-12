@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <input type="button" value="bắt đầu" onclick="f()">
+</body>
+<script>
+    function f() {
+        let number =+prompt("bạn muốn đoán bao nhiêu sô");
+        let ran= Math.floor(Math.random() * number);
+        console.log(ran)
+        let check =+prompt("nhập vào số bạn đoán ");
+        let count = 0
+        while (check<ran){
+            if (count == 4) {
+                alert("Bạn hết số lần đoán")
+                break;
+            } else if (number_check < number_ran) {
+                alert("Số bạn đoán bé hơn");
+            } else {
+                alert ("Số bạn đoán lớn hơn")
+            }
+            number_check = prompt ("Nhập số bạn đoán");
+        }
+        if (count == 4) {
+            document.write("Bạn hết số lần đoán")
+        } else {
+            document.write("Bạn đã đoán đúng số. Chúc mừng bạn!")
+        }
+    }
+</script>
+</html>
