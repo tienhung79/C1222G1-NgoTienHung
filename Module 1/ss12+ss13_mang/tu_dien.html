@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <input type="text"  id="word">
+    <input type="button" onclick="f()" value="Tìm kiếm">
+    <br>
+    <input type="text"  id="b">
+
+
+<script>
+    function f() {
+        let input = document.getElementById('word').value;
+        let end = ['car','bycle','air'];
+        let viet = ['oto','xe dap','may bay'];
+
+        for (let i = 0; i < end.length; i++) {
+            if (input === end[i]) {
+                document.getElementById("b").value = viet[i];
+            } else {
+                document.getElementById("b").value = "không có trong từ điển ";
+            }
+        }
+    }
+</script>
+</body>
+
+</html>

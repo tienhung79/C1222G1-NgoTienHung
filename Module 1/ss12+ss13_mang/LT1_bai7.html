@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script>
+    let count = 0;
+    let array = Array();
+    let x=0;
+    let m = +prompt("phần tử số nguyên V:");
+    while (count < 10) {
+        array[x] = +prompt("nhập giá trị:");
+        x++;
+        count++;
+    }
+    for (let i = 0; i < array.length; i++) {
+        if(array[i] == m){
+            array.splice(i,1);
+            array.push(0);
+        }
+    }
+    document.writeln(array);
+</script>
+</html>
