@@ -9,12 +9,11 @@
 </body>
 <script>
     let a = ['a', 'b', 'c', '-', 'e'];
-    let newa = a.map(function () {
-        for (i = 0; i < a.length; i++) {
-            if (a[i] === 'a') {
-                a[i] = 'b';
-            }
-        }
+    let newa = a.map(function (e) {
+       if(e === 'a'){
+           e = 'b'
+       }
+       return e;
     })
     document.writeln(newa);
 

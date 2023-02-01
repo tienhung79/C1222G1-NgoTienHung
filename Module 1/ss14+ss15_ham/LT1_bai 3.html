@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <input type="number" id="1"> So thu nhat
+    <input type="number" id="2"> So thu hai </br>
+    <button type="button" onclick="check()"> check</button>
+    </br>
+    <input type="text" id="3"> Result
+</body>
+<script>
+    function check() {
+        let a = parseInt(document.getElementById('1').value);
+        let b = parseInt(document.getElementById('2').value);
+        if (a > b) {
+            document.getElementById('3').value = 'Max';
+        } else {
+            document.getElementById('3').value = a + b;
+        }
+
+    }
+</script>
+</html>

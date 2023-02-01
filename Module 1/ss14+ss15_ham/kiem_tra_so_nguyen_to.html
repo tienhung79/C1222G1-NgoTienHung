@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <input type="number" id="1"> Nhap so nguyen to </br>
+    <button type="button" onclick="f()" value="Check"></button>
+    </br>
+    <input type="text" id="2"> Result
+</body>
+<script>
+    function f() {
+        let number = document.getElementById('1').value;
+        let count = 0;
+        for (let i = 1; i <= number; i++) {
+            if (number % i === 0) {
+                count++;
+            }
+        }
+        if (count == 2) {
+            document.getElementById('2').value = " la so nguyen to";
+        } else {
+            document.getElementById('2').value = " khong la so nguyen to";
+
+        }
+    }
+</script>
+</html>

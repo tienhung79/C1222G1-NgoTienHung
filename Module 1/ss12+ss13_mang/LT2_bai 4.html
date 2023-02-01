@@ -8,11 +8,11 @@
 
 </body>
 <script>
-    let a = [];
+    let a = prompt('nhap chuoi a');
+    let array = a.split(' ');
     let count = 0;
-    for (i = 0; i < 5; i++) {
-        a[i] = +prompt('nhap phan tu a');
-        if (isNaN(a[i])) {
+    for (let i = 0; i < array.length; i++) {
+        if (array[i] !== "") {
             count++;
         }
     }

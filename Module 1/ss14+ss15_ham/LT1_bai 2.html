@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <input type="number" id="1"> Nhap doi so
+    <button type="button" value="result" onclick="incre()"></button>
+    <input type="number" id="2"> result
+</body>
+<script>
+    function incre() {
+        var a = parseInt(document.getElementById('1').value) ;
+        var b;
+        b = a +1  ;
+        document.getElementById('2').value = b;
+    }
+</script>
+</html>

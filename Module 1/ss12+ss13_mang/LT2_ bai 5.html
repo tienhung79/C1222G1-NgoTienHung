@@ -8,19 +8,14 @@
 
 </body>
 <script>
-    let a = [];
-    let b = [];
-    let count =0;
-    for (i=0;i<5;i++){
-        a[i]= prompt('nhap phan tu a')
-        b[i]= prompt('nhap phan tu b')
-        if (a[i]===b[i]){
-            count++;
-        }
+    let a = prompt('nhap vao chuoi a');
+    let b = prompt('nhap vao chuoi b');
+    if (a === b) {
+        document.writeln('a va b giong nhau');
+    } else {
+        document.writeln('hai chuoi khong giong nhau');
     }
-        if (count == a.length){
-            document.writeln('giong nhau')
-        }else {'khong giong nhau'}
+    ;
 
 </script>
 </html>

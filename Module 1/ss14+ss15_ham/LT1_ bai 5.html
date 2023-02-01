@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <input type="text" id="1"> Nhap ten ngoi sao
+    <button type="button" onclick="check()" >Check</button>
+    <input type="text" id="2"> Result
+</body>
+<script>
+    function check() {
+        let nhap = document.getElementById('1').value;
+        let a = [ 'Polaris', 'Aldebaran', 'Deneb', 'Vega', 'Altair', 'Dubhe', 'Regulus'];
+        let b = ['Ursa Minor', 'Tarurus', 'Cygnus', 'Lyra', 'Aquila', 'Ursa Major', 'Leo'];
+        for (let i=0;i<a.length;i++){
+            if (nhap === a[i]){
+                document.getElementById('2').value = b[i];
+                break;
+            }else {
+                document.getElementById('2').value =' khong co';
+            }
+        }
+
+    }
+</script>
+</html>

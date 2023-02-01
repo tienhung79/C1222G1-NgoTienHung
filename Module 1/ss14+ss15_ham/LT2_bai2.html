@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <input type="number" id="2"> radius </br>
+    <input type="number" id="1"> result
+    <button type="button" onclick="area()"> area</button>
+    <button type="button" onclick="perimeter()">peremiter</button>
+</body>
+<script>
+    function area() {
+        let r = parseInt(document.getElementById('2').value);
+        let s;
+        let pi = 3.14;
+        s = Math.pow(r, 2) * pi;
+        document.getElementById('1').value = s;
+    }
+
+    function perimeter() {
+        let r = parseInt(document.getElementById('2').value);
+        let c;
+        let pi = 3.14;
+        c = r * 2 * pi
+        document.getElementById('1').value = c;
+    }
+</script>
+</html>
