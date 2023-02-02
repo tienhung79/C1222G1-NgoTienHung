@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script>
+    function check() {
+        let array = new Array(5);
+        let a = prompt('nhap ky tu bat ki');
+        let count = 0;
+        for (let i = 0; i < array.length; i++) {
+            array[i] = prompt('nhap phan tu a')
+            if (array[i] === a) {
+                count++;
+            }
+        }
+        if (count > 0) {
+            document.writeln(count);
+        } else {
+            document.writeln('-1');
+        }
+
+    }
+
+    check();
+</script>
+</html>
