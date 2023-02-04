@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let c = +prompt("nhap c");
+    class Temperature {
+        constructor() {
+            this.celcius = c;
+        }
+
+        getFahrenheit(){
+            let f;
+            return f = (this.celcius * 9/5) + 32;
+        }
+
+        getKelvin(){
+            let k;
+            return k = (this.celcius + 273.15);
+        }
+    }
+    let temperature = new Temperature(c);
+    document.write("Nhiệt độ fahrenheit (độ F): " + temperature.getFahrenheit() + "<br>");
+    document.write("Nhiệt độ kelvin (độ K): " + temperature.getKelvin());
+</script>
+</body>
+</html>

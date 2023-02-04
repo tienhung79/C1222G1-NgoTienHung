@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<canvas id="myCanvas" width="1000" height="500"></canvas>
+<script>
+    let canvas = document.getElementById("myCanvas");
+
+    class Rectangle {
+        constructor(width, height) {
+            this.width = width;
+            this.height = height;
+        }
+
+        getArea() {
+            return this.height * this.width;
+        }
+
+        getPerimeter() {
+            return (this.height + this.width) * 2;
+        }
+
+    }
+
+    let x = +prompt("Nhập vào chiều rộng của hình chữ nhật: ");
+    let y = +prompt("Nhập vào chiều dài của hình chữ nhật: ");
+    let rectangle = new Rectangle(x, y);
+    document.writeln(rectangle.getArea() + '<br>');
+    document.writeln(rectangle.getPerimeter());
+    let ctx = canvas.getContext('2d');
+    ctx.beginPath();
+    ctx.rect(5, 5, rectangle.height, rectangle.width);
+    ctx.stroke();
+
+</script>
+</body>
+</html>
