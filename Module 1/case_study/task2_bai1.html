@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script>
+    let h = +prompt('nhap chieu cao h')
+    for (let i = 1; i <= h; i++) {
+        for (let j = 1; j <= i; j++) {
+            if (i === h || j === 1 || j === i) {
+                document.writeln('*');
+            } else {
+                document.writeln("&nbsp;&nbsp;");
+            }
+        }
+        document.writeln('<br>');
+    }
+</script>
+</html>

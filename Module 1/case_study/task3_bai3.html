@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script>
+    let numerators = [5, 5, 2];
+    let denominators = [6, 4, 3];
+    let max = numerators[0]/denominators[0];
+    let index;
+    for (let i=1;i<numerators.length;i++){
+            if (numerators[i]/denominators[i] >max){
+             max =numerators[i]/denominators[i];
+             index=i;
+            }
+    }document.writeln(max + '<br>');
+    document.writeln(index)
+
+</script>
+</html>

@@ -74,13 +74,18 @@
     let apple = new Apple();
     let adam = new Human('adam', true, 70);
     let eva = new Human('eva', true, 50);
-    adam.eat(apple);
-    document.writeln(adam.name + 'ăn táo' + '<br>');
-    document.writeln('Quả táo còn:' + apple.getWeight() + 'đơn vị' + '<br>');
-    document.writeln('Cân nặng ' + adam.getWeightHuman() + '<br>');
-    eva.eat(apple);
-    document.writeln(eva.name + 'ăn táo' + '<br>');
-    document.writeln('Quả táo còn:' + apple.getWeight() + 'đơn vị' + '<br>');
-    document.writeln('Cân nặng ' + eva.getWeightHuman());
+    let count =0;
+    while(count < 10) {
+        adam.eat(apple);
+        document.writeln(adam.name + 'ăn táo' + '<br>');
+        document.writeln('Quả táo còn:' + apple.getWeight() + 'đơn vị' + '<br>');
+        document.writeln('Cân nặng ' + adam.getWeightHuman() + '<br>');
+        eva.eat(apple);
+        document.writeln(eva.name + 'ăn táo' + '<br>');
+        document.writeln('Quả táo còn:' + apple.getWeight() + 'đơn vị' + '<br>');
+        document.writeln('Cân nặng ' + eva.getWeightHuman() + '<br>');
+
+        count++;
+    }
 </script>
 </html>

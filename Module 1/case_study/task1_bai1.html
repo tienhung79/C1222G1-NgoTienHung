@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script>
+    let a = +prompt('nhap so luong' + 'tr');
+    let b;
+    let c;
+    if (a > 15) {
+        c = 0.2 * a;
+        b = a - c;
+    } else if (a >= 7 && a <= 15) {
+        c = 0.1 * a;
+        b = a - c;
+    } else if (a < 7) {
+        c = 0.05 * a;
+        b = a - c;
+    }
+    document.writeln(c + '<br>')
+    document.writeln(b);
+</script>
+</html>
