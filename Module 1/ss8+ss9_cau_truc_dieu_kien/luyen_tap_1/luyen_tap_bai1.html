@@ -8,7 +8,8 @@
     <input type="text" id="a"> a <br>
     <input type="text" id="b"> b <br>
     <input type="button" onclick="result()" value="="> <br>
-    <input type="text" value="0" id="KQ">
+    <input type="text" value="0" id="KQ"> <br>
+    <input type="text" id="KQK">
 </body>
 <script>
     function result() {
@@ -17,10 +18,13 @@
         let result;
         if (a % b == 0) {
             result = "Chia hết";
+            document.getElementById("KQ").value = result;
         } else {
             result = " không chia hết";
+            document.getElementById("KQK").value = result;
         }
-        document.getElementById("KQ").value = result;
+
+
     }
 </script>
 </html>

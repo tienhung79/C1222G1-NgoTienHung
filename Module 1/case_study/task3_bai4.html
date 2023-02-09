@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>Danh sách thức uống</h1>
+<b>
+    1:cafe <br>
+    2:cam vắt <br>
+    3:nước ép cà rốt<br>
+    4:nước ép cà chua<br>
+    5:nước lọc <br>
+    6:nước dừa <br>
+    7:thoát gọi món<br>
+</b>
+    <input type="number" id="enter">Chọn thức uống <br>
+    <input type="number" id="soluong">Nhập số lượng <br>
+    <button type="button" onclick="check()">Check</button>
+    <br>
+    <input type="text" id="price">Giá <br>
+    <button type="reset" onclick="reset()">Reset</button>
+</body>
+<script>
+    function check() {
+        let a = +document.getElementById('enter').value;
+        let b;
+        let c = +document.getElementById('soluong').value;
+        switch (a) {
+            case 1:
+                b = 32000;
+                document.getElementById('price').value = b * c;
+                break;
+            case 2:
+                b = 42000;
+                document.getElementById('price').value = b * c;
+                break;
+            case 3:
+                b = 52000;
+                document.getElementById('price').value = b * c;
+            case 4:
+                b = 62000;
+                document.getElementById('price').value = b * c;
+                break;
+            case 5:
+                b = 72000;
+                document.getElementById('price').value = b * c;
+                break;
+            case 6:
+                b = 82000;
+                document.getElementById('price').value = b * c;
+                break;
+            case 7:
+                document.getElementById('price').value = 'thoát gọi món';
+                break;
+            default:
+                document.getElementById('price').value = 'không có món';
+        }
+
+
+    }
+
+    function reset() {
+        document.getElementById('enter').value = '';
+        document.getElementById('price').value = '';
+        document.getElementById('soluong').value = '';
+
+    }
+</script>
+</html>
