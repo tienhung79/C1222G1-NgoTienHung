@@ -8,16 +8,47 @@
 
 </body>
 <script>
-    let a = [1,2,3,3,3,3,4]
-    for (i=0;i<a.length;i++){
-         if (a[i]===3){
-             a.splice(i,1)
 
 
-
-             
-         }
+    function changeString(string) {
+        let lowerCase = string.toLowerCase().trim();
+        let array = lowerCase.split("")
+        for (let i = 0; i < array.length; i++) {
+            if (array[i] === ' ' && array[i + 1] === ' ') {
+                array.splice(i, 1);
+                i--;
+            }
+            for (let j = 0; j < array.length; j++) {
+                if (array[i - 1] === ' ' || i === 0) {
+                    array.splice(i, 1, array[i].toUpperCase())
+                }
+            }
+        }
+        document.writeln(array.join(''))
     }
-    document.writeln(a)
+
+    function maxChar(string) {
+        let array = string.split(" ");
+        let maxLength = array[0].length;
+        let max;
+        for (i = 0; i < array.length; i++) {
+            if (array[i].length > maxLength) {
+                maxLength = array[i].length;
+                max = array[i]
+            }
+
+        }
+        document.writeln(max);
+    }
+
+    function main() {
+        let input = prompt('nhap mot chuoi')
+        changeString(input);
+        document.writeln('<br>')
+        maxChar(input);
+    }
+
+    main();
+
 </script>
 </html>

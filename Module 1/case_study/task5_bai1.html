@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script>
+
+    let number = +prompt('nhap do dai cua mang');
+    let array = Array(number);
+    for (let i = 0; i < array.length; i++) {
+        let numberChild = +prompt('nhap do dai mang con thu' + i);
+        let arrayChild = Array(numberChild);
+        for (let j = 0; j < arrayChild.length; j++) {
+            arrayChild[j] = +prompt('nhap phan tu');
+        }
+        array[i] = arrayChild;
+    }
+    let sum = 0;
+    for (let i = 0; i < array.length; i++) {
+        for (let j = 0; j < array[i].length; j++) {
+            if (array[i][j] % 2 === 0) {
+                sum += array[i][j];
+            }
+        }
+    }
+    console.log(array);
+    console.log(sum);
+
+
+</script>
+</html>

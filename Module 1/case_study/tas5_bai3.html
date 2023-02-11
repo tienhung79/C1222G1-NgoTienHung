@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script>
+
+    let number = +prompt('nhap do dai cua mang');
+    let array = Array(number);
+    for (let i = 0; i < array.length; i++) {
+        let numberChild = +prompt('nhap do dai mang con thu' + i);
+        let arrayChild = Array(numberChild);
+        for (let j = 0; j < arrayChild.length; j++) {
+            arrayChild[j] = +prompt('nhap phan tu');
+        }
+        array[i] = arrayChild;
+    }
+
+    function max() {
+        let max = array[0][0];
+        for (let i = 0; i < array.length; i++) {
+            for (let j = 0; j < array[i].length; j++) {
+                if (array[i][j] > max) {
+                    max = array[i][j];
+                }
+            }
+        }
+        console.log(max);
+
+    }
+
+    function min() {
+        let min = array[0][0];
+        for (let i = 0; i < array.length; i++) {
+            for (let j = 0; j < array[i].length; j++) {
+                if (array[i][j] < min) {
+                    min = array[i][j];
+                }
+            }
+        }
+        console.log(min);
+
+    }
+
+    max();
+    min();
+</script>
+</html>
