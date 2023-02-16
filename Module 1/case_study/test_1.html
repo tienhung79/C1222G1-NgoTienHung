@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script>
+    let arr = Array(50)
+    let sum =0  ;
+    let count =0 ;
+    let avg ;
+    for (let i=0; i<arr.length; i++){
+        arr[i]= +prompt('nhap phan tu mang');
+        if (i%3===0){
+            if (arr[i]%5===0){
+                sum += arr[i];
+                count++;
+            }
+        }
+    }avg = sum/count;
+    document.writeln(arr + '<br>');
+    document.writeln(avg);
+
+</script>
+</html>

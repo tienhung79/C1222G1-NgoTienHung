@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script>
+    let n = +prompt("nhập vào độ dài mảng");
+    let arr = new Array(n);
+    let input;
+    for (let i = 0; i < n; i++) {
+        do {
+            input = +prompt("nhập vào các số trong mảng");
+            if (arr.indexOf(input) === -1) {
+                arr.push(input);
+                break;
+            } else {
+                alert("nhập lại");
+            }
+
+
+        } while (true);
+    }
+    document.write(arr)
+
+</script>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script>
+    let a = 220;
+    let b = 284;
+    let sum1 = 0;
+    let sum2 =0;
+    for (let i =0; i<a;i++){
+        if (a%i===0){
+            sum1+=i
+        }
+    }
+    for (let j =0; j<b; j++){
+        if (b%j===0){
+            sum2+=j
+        }
+    }
+    if (a===sum2 && b===sum1){
+        document.writeln('day laf cap so than thiet')
+    }else {document.writeln('day khong phai la cap so than thiet ')}
+    document.writeln(sum1)
+    document.writeln(sum2)
+</script>
+</html>

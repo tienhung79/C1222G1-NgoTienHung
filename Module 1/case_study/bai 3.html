@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script>
+    let number = +prompt('nhap so luong phan tu');
+    let array = Array(number);
+    for (let i=0; i<array.length; i++){
+        array[i]=+prompt('nhap phan tu thu '+i);
+    }
+
+    // let array = [1, 5, 6, 13, 9, 12, 8, 0, 5, 1];
+
+    function checkFibonaci(array) {
+        let max = Math.max(...array);
+        // for (let i = 0; i < array.length; i++) {
+        //     if (array[i] > max) {
+        //         max = array[i];
+        //     }
+        // }
+        let arrFibon = [];
+        let a = 0;
+        let b = 0;
+        let c = 1;
+        for (let j = 0; ; j++) {
+            a = b;
+            b = c;
+            c = a + b;
+            if (c <= max) {
+                arrFibon.push(c);
+            } else break;
+        }
+        let newArrayFibo = [];
+        for (let i = 0; i < array.length; i++) {
+            if (arrFibon.includes(array[i])) {
+                newArrayFibo.push(array[i]);
+            }
+        }
+        document.writeln(newArrayFibo.sort((a, b) => a - b));
+    }
+
+    checkFibonaci(array);
+
+
+</script>
+</html>

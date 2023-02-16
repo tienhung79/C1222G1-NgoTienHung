@@ -11,8 +11,7 @@
     <input type="text" id="2"> Result
 </body>
 <script>
-    function f() {
-        let number = document.getElementById('1').value;
+    function isPrime(number) {
         let count = 0;
         for (let i = 1; i <= number; i++) {
             if (number % i === 0) {
@@ -20,9 +19,9 @@
             }
         }
         if (count == 2) {
-            document.getElementById('2').value = " la so nguyen to";
+           return true;
         } else {
-            document.getElementById('2').value = " khong la so nguyen to";
+            return false;
 
         }
     }

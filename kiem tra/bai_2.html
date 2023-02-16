@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script>
+
+    let a = Array(2);
+    let b = Array(2);
+    for (let i = 0; i < a.length; i++) {
+        a[i] = +prompt('nhap tu so thu ' + i);
+        b[i] = +prompt('nhap mau so thu' + i);
+    }
+
+    function soSanh(a, b) {
+        for (let i = 0; i < a.length; i++) {
+            if (a[i] % a[i + 1] === 0) {
+                if (b[i] % b[i + 1] === 0) {
+                    document.writeln('hai phan so bang nhau');
+                    break;
+                }
+            }
+
+            if (a[i + 1] % a[i] === 0) {
+                if (b[i + 1] % b[i] === 0) {
+                    document.writeln('hai phan so bang nhau');
+                    break;
+                }
+            }
+            if (a[i] % b[i] === a[i + 1] % b[i + 1]) {
+                document.writeln('hai phan so bang nhau');
+                break;
+            }
+            if (b[i] % a[i] === b[i + 1] % a[i + 1]) {
+                document.writeln('hai phan so bang nhau');
+                break;
+            }
+        }
+    }
+
+    soSanh(a, b);
+</script>
+</html>

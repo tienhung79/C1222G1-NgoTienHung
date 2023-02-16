@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script>
+    let a = Array(5);
+    let b = [];
+    for (let i = 0; i < 5; i++) {
+        a[i] = +prompt('nhap phan tu thu' + i);
+    }
+    for (let j = 0; j < a.length; j++) {
+        if (isPrime(a[j])) {
+            b.push(a[j]);
+        }
+    }
+    document.writeln('mang a la:' + a + '<br>');
+    document.writeln('mang b la:' + b);
+
+    function isPrime(number1) {
+        let count = 0;
+        for (let i = 1; i <= number1; i++) {
+            if (number1 % i === 0) {
+                count++;
+            }
+        }
+        if (count === 2) {
+            return true;
+        } else return false;
+
+    }
+</script>
+</html>

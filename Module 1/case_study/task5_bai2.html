@@ -19,26 +19,36 @@
         }
         array[i] = arrayChild;
     }
-
+    let arr = [];
     let count1 = 0;
-    let index = [];
-    let count = 0;
     for (let i = 0; i < array.length; i++) {
         for (let j = 0; j < array[i].length; j++) {
-            for (k = 1; k < array[i][j]; k++) {
-                if (array[i][j] % k === 0) {
-                    count1++;
-                }
+            if (isPrime(array[i][j])) {
+                arr.push(array[i][j]);
+                count1++
             }
-            if (count1 === 2) {
+
+        }
+    }
+    document.writeln('tong so nguyen to' + count1+'<br>')
+    if (count1 > 0) {
+        document.writeln('cac so nguyen to do la' + arr+'<br>');
+    } else document.writeln('khong co so nguyen to')
+
+    function isPrime(number) {
+        let count = 0;
+        for (let i = 1; i <= number; i++) {
+            if (number % i === 0) {
                 count++;
-                index.push(array[i][j]);
             }
         }
+        if (count == 2) {
+            return true;
+        } else {
+            return false;
 
+        }
     }
-    console.log('tong cac so nguyen to do la ' + count);
-    console.log(' cac so nguyen to do la ' + index);
 
 
 </script>
